@@ -1,0 +1,15 @@
+.bg__intro {
+    background: #86c3d7;
+    width: 100%;
+    height: 100vh;
+    &::before {
+        content: "";
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        background: url(/img/pattern_intro.png);
+        background-repeat: no-repeat;
+        background-position: right bottom;
+        background-size: contain;
+    }
+}
