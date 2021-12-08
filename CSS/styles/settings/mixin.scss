@@ -1,0 +1,16 @@
+@mixin btn {
+    cursor: pointer;
+    width: 156px;
+    height: 58px;
+    background-color: #fff;
+    border-radius: 30px;
+    border-style: none;
+    font-size: 19px;
+    text-transform: uppercase;
+    font-family: AlegreyaSans-ExtraBold;
+    color: #365a49;
+    &:hover {
+        background-color: #365a49;
+        color: #fff;
+    }
+}
