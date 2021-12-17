@@ -8,6 +8,13 @@
     background-size: contain;
 }
 
+.intro__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+}
+
 .header {
     padding-top: 24px;
     display: flex;
@@ -35,13 +42,63 @@
     color: #fff;
 }
 
-.intro__container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100vh;
+.intro-main__text-first {
+    font-family: AlegreyaSans-Bold;
+    font-size: 48px;
+    color: #fff;
+    width: 323px;
+    text-transform: uppercase;
+}
+
+.intro-main__text-second {
+    font-family: AlegreyaSans-Regular;
+    font-size: 21px;
+    width: 342px;
+    color: #fff;
+    font-weight: normal;
+    margin-top: 10px;
 }
 
 .intro-main__intro-button {
     @include btn;
+    margin-top: 32px;
+}
+
+.container__intro-footer {
+    margin-bottom: 47px;
+}
+
+.intro-footer__intro-list {
+    display: flex;
+    justify-content: space-between;
+    width: 460px;
+}
+
+.intro-list__intro-footer {
+    display: flex;
+    align-items: center;
+}
+
+.intro-footer {
+    &__text-sheet {
+        color: #fff;
+        font-size: 16px;
+        font-family: AlegreyaSans-Regular;
+        width: 84px;
+        margin-left: 7px;
+    }
+    &__text-car {
+        color: #fff;
+        font-size: 16px;
+        font-family: AlegreyaSans-Regular;
+        width: 58px;
+        margin-left: 12px;
+    }
+    &__text-roulette {
+        color: #fff;
+        font-size: 16px;
+        font-family: AlegreyaSans-Regular;
+        width: 70px;
+        margin-left: 9px;
+    }
 }
