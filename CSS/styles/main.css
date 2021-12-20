@@ -70,6 +70,37 @@
   background-size: contain;
 }
 
+.img-intro__bars {
+  position: absolute;
+  right: 130px;
+  bottom: 130px;
+}
+.img-intro__sheet-top {
+  position: absolute;
+  right: 110px;
+  bottom: 155px;
+}
+.img-intro__sheet-left {
+  position: absolute;
+  top: 95%;
+  left: 10%;
+}
+.img-intro__sheet-bottom {
+  position: absolute;
+  top: 93.5%;
+  right: 20%;
+}
+.img-intro__berries-bottom {
+  position: absolute;
+  top: 95%;
+  right: 9%;
+}
+.img-intro__berries-top {
+  position: absolute;
+  top: 68%;
+  right: 18%;
+}
+
 .intro__container {
   display: -webkit-box;
   display: -ms-flexbox;

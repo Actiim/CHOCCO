@@ -8,6 +8,39 @@
     background-size: contain;
 }
 
+.img-intro {
+    &__bars {
+        position: absolute;
+        right: 130px;
+        bottom: 130px;
+    }
+    &__sheet-top {
+        position: absolute;
+        right: 110px;
+        bottom: 155px;
+    }
+    &__sheet-left {
+        position: absolute;
+        top: 95%;
+        left: 10%;
+    }
+    &__sheet-bottom {
+        position: absolute;
+        top: 93.5%;
+        right: 20%;
+    }
+    &__berries-bottom {
+        position: absolute;
+        top: 95%;
+        right: 9%;
+    }
+    &__berries-top {
+        position: absolute;
+        top: 68%;
+        right: 18%;
+    }
+}
+
 .intro__container {
     display: flex;
     flex-direction: column;
