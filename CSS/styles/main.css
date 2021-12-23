@@ -62,7 +62,7 @@
 
 .bg__intro {
   background: #86c3d7;
-  width: 100vw;
+  width: 100wh;
   height: 100vh;
   background-image: url(/img/pattern_intro.png);
   background-repeat: no-repeat;
@@ -82,17 +82,17 @@
 }
 .img-intro__sheet-left {
   position: absolute;
-  top: 95%;
+  top: 93%;
   left: 10%;
 }
 .img-intro__sheet-bottom {
   position: absolute;
-  top: 93.5%;
+  top: 92%;
   right: 20%;
 }
 .img-intro__berries-bottom {
   position: absolute;
-  top: 95%;
+  top: 93%;
   right: 9%;
 }
 .img-intro__berries-top {
@@ -230,4 +230,10 @@
   font-family: AlegreyaSans-Regular;
   width: 70px;
   margin-left: 9px;
+}
+
+.bg__info-one {
+  background: #fff;
+  width: 100wh;
+  height: 100vh;
 }

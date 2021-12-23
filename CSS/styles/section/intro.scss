@@ -1,6 +1,6 @@
 .bg__intro {
     background: #86c3d7;
-    width: 100vw;
+    width: 100wh;
     height: 100vh;
     background-image: url(/img/pattern_intro.png);
     background-repeat: no-repeat;
@@ -21,17 +21,17 @@
     }
     &__sheet-left {
         position: absolute;
-        top: 95%;
+        top: 93%;
         left: 10%;
     }
     &__sheet-bottom {
         position: absolute;
-        top: 93.5%;
+        top: 92%;
         right: 20%;
     }
     &__berries-bottom {
         position: absolute;
-        top: 95%;
+        top: 93%;
         right: 9%;
     }
     &__berries-top {
@@ -134,4 +134,10 @@
         width: 70px;
         margin-left: 9px;
     }
+}
+
+.bg__info-one {
+    background: #fff;
+    width: 100wh;
+    height: 100vh;
 }
