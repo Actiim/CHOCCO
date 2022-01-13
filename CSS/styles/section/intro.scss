@@ -207,3 +207,17 @@
     position: absolute;
     top: 178%;
 }
+
+// reviews
+.bg__reviews {}
+
+.reviews__block {
+    background-color: #f8faf9;
+    width: 940px;
+    height: 345px;
+    background-image: url(/img/Слой_2.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+    display: flex;
+    align-items: center;
+}
