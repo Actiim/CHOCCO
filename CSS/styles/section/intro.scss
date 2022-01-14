@@ -136,6 +136,7 @@
     }
 }
 
+// description section
 .bg__description {
     background: #fff;
     width: 100wh;
@@ -208,10 +209,22 @@
     top: 178%;
 }
 
-// reviews
-.bg__reviews {}
+// reviews section
+.bg__reviews {
+    height: 100vh;
+}
 
-.reviews__block {
+.reviews__main {
+    padding-top: 69px;
+    display: flex;
+    justify-content: center;
+    font-family: AlegreyaSans-Bold;
+    text-transform: uppercase;
+    font-size: 48px;
+}
+
+.reviews__info-block {
+    margin-top: 44px;
     background-color: #f8faf9;
     width: 940px;
     height: 345px;
@@ -220,4 +233,38 @@
     background-position: top right;
     display: flex;
     align-items: center;
+}
+
+.info-block {
+    &__rev-img {
+        margin-left: 45px;
+    }
+    &__rev-text {
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+        justify-content: space-around;
+        height: 260px;
+    }
+}
+
+.rev-img__alena {
+    max-width: none;
+}
+
+.rev-text {
+    &__main {
+        font-family: AlegreyaSans-Bold;
+        font-size: 30px;
+    }
+    &__mid {
+        margin-right: 100px;
+        font-family: AlegreyaSans-Regular;
+        font-size: 18px;
+        color: #666666;
+    }
+    &__end {
+        font-family: AlegreyaSans-Bold;
+        font-size: 18px;
+    }
 }
