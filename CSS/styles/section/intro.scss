@@ -268,3 +268,37 @@
         font-size: 18px;
     }
 }
+
+.review__list {
+    width: 940px;
+}
+
+.list__rev-photo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rev-photo__together {
+    margin-left: 11px;
+}
+
+// .together {
+//     &__girl-one {
+//         border: 5px solid #365a49;
+//         border-radius: 100%;
+//     }
+//     &__girl-two {
+//         border: 5px solid #365a49;
+//         border-radius: 100%;
+//     }
+//     &__boy-one {
+//         border: 5px solid #365a49;
+//         border-radius: 100%;
+//     }
+// }
+.reviews__berry {
+    position: absolute;
+    right: 230px;
+    top: 1920px;
+}
