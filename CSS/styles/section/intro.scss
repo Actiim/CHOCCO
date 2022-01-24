@@ -212,6 +212,7 @@
 // reviews section
 .bg__reviews {
     height: 100vh;
+    position: relative;
 }
 
 .reviews__main {
@@ -277,6 +278,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 27px;
 }
 
 .rev-photo__together {
@@ -297,8 +299,29 @@
 //         border-radius: 100%;
 //     }
 // }
-.reviews__berry {
-    position: absolute;
-    right: 230px;
-    top: 1920px;
+.reviews {
+    &__berry {
+        position: absolute;
+        right: 22%;
+        top: 50px;
+    }
+    &__sheet-left {
+        position: absolute;
+        left: 0px;
+        top: 83%;
+    }
+    &__berries-left {
+        position: absolute;
+        left: 0px;
+        top: 89%;
+    }
+}
+
+// delivery section
+.bg__delivery {
+    width: 100%;
+    height: 100vh;
+    background-image: url(/img/паттерн.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }

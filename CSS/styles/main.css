@@ -325,6 +325,7 @@
 
 .bg__reviews {
   height: 100vh;
+  position: relative;
 }
 
 .reviews__main {
@@ -406,6 +407,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-top: 27px;
 }
 
 .rev-photo__together {
@@ -414,6 +416,24 @@
 
 .reviews__berry {
   position: absolute;
-  right: 230px;
-  top: 1920px;
+  right: 22%;
+  top: 50px;
+}
+.reviews__sheet-left {
+  position: absolute;
+  left: 0px;
+  top: 83%;
+}
+.reviews__berries-left {
+  position: absolute;
+  left: 0px;
+  top: 89%;
+}
+
+.bg__delivery {
+  width: 100%;
+  height: 100vh;
+  background-image: url(/img/паттерн.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
