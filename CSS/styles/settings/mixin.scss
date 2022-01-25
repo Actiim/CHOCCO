@@ -14,3 +14,48 @@
         color: #fff;
     }
 }
+
+@mixin label {
+    font-family: AlegreyaSans-Medium;
+    color: #365a49;
+    font-size: 18px;
+}
+
+@mixin input {
+    border: none;
+    width: 220px;
+    height: 59px;
+    outline: none;
+    font-family: AlegreyaSans;
+    font-size: 18px;
+    padding-left: 11px;
+}
+
+@mixin input-long {
+    border: none;
+    width: 460px;
+    height: 59px;
+    outline: none;
+    font-family: AlegreyaSans;
+    font-size: 18px;
+    padding-left: 11px;
+}
+
+@mixin input-short {
+    border: none;
+    width: 100px;
+    height: 59px;
+    outline: none;
+    font-family: AlegreyaSans;
+    font-size: 18px;
+    padding-left: 11px;
+}
+
+@mixin border {
+    &:hover {
+        outline: 3px solid #dee2bd;
+    }
+    &:focus {
+        outline: 3px solid #dee2bd;
+    }
+}

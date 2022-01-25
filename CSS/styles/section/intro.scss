@@ -325,3 +325,108 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.container__delivery-main {
+    display: flex;
+    justify-content: center;
+    padding-top: 86px;
+}
+
+.delivery-section__main {
+    font-family: AlegreyaSans-Bold;
+    font-size: 48px;
+    text-transform: uppercase;
+    color: #365a49;
+}
+
+.container__delivery-section {
+    margin-top: 54px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.address-block__main-info {
+    display: flex;
+    justify-content: space-between;
+    width: 460px;
+}
+
+.main-info__name-number {
+    display: flex;
+    flex-direction: column;
+}
+
+.name-number {
+    &__label {
+        @include label;
+    }
+    &__input {
+        @include input;
+        @include border;
+    }
+}
+
+.address-block__location-info {
+    margin-top: 20px;
+}
+
+.location-info__street {
+    display: flex;
+    flex-direction: column;
+}
+
+.street {
+    &__label {
+        @include label;
+    }
+    &__input {
+        @include input-long;
+        @include border;
+    }
+}
+
+.address-block__adr-flex {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.adr-flex__house-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.house-info {
+    &__label {
+        @include label;
+    }
+    &__input {
+        @include input-short;
+        @include border;
+    }
+}
+
+.comment-block__com-settings {
+    display: flex;
+    flex-direction: column;
+}
+
+.com-settings {
+    &__label {
+        @include label;
+    }
+    &__textarea {
+        @include border;
+        width: 460px;
+        height: 180px;
+        resize: none;
+        outline: none;
+        border: none;
+        padding: 11px 11px;
+    }
+}
+
+.comment-block__radio-settings {
+    margin-top: 21px;
+    display: flex;
+}
