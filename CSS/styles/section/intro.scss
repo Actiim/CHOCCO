@@ -359,6 +359,7 @@
 .name-number {
     &__label {
         @include label;
+        margin-bottom: 6px;
     }
     &__input {
         @include input;
@@ -378,6 +379,7 @@
 .street {
     &__label {
         @include label;
+        margin-bottom: 6px;
     }
     &__input {
         @include input-long;
@@ -399,6 +401,7 @@
 .house-info {
     &__label {
         @include label;
+        margin-bottom: 6px;
     }
     &__input {
         @include input-short;
@@ -414,6 +417,7 @@
 .com-settings {
     &__label {
         @include label;
+        margin-bottom: 6px;
     }
     &__textarea {
         @include border;
@@ -426,7 +430,20 @@
     }
 }
 
-.comment-block__radio-settings {
-    margin-top: 21px;
-    display: flex;
+.comment-block {
+    &__radio-settings {
+        margin-top: 34px;
+        display: flex;
+        .radio-settings {
+            &__radio-block-two {
+                margin-left: 23px;
+            }
+        }
+    }
+    &__checkbox-settings {
+        margin-top: 20px;
+    }
+    &__delivery-button {
+        margin-top: 48px;
+    }
 }

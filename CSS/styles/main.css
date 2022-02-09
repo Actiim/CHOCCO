@@ -489,6 +489,7 @@
   font-family: AlegreyaSans-Medium;
   color: #365a49;
   font-size: 18px;
+  margin-bottom: 6px;
 }
 .name-number__input {
   border: none;
@@ -524,6 +525,7 @@
   font-family: AlegreyaSans-Medium;
   color: #365a49;
   font-size: 18px;
+  margin-bottom: 6px;
 }
 .street__input {
   border: none;
@@ -565,6 +567,7 @@
   font-family: AlegreyaSans-Medium;
   color: #365a49;
   font-size: 18px;
+  margin-bottom: 6px;
 }
 .house-info__input {
   border: none;
@@ -596,6 +599,7 @@
   font-family: AlegreyaSans-Medium;
   color: #365a49;
   font-size: 18px;
+  margin-bottom: 6px;
 }
 .com-settings__textarea {
   width: 460px;
@@ -613,8 +617,17 @@
 }
 
 .comment-block__radio-settings {
-  margin-top: 21px;
+  margin-top: 34px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+.comment-block__radio-settings .radio-settings__radio-block-two {
+  margin-left: 23px;
+}
+.comment-block__checkbox-settings {
+  margin-top: 20px;
+}
+.comment-block__delivery-button {
+  margin-top: 48px;
 }
