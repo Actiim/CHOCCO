@@ -496,7 +496,6 @@
   width: 220px;
   height: 59px;
   outline: none;
-  font-family: AlegreyaSans;
   font-size: 18px;
   padding-left: 11px;
 }
@@ -532,7 +531,6 @@
   width: 460px;
   height: 59px;
   outline: none;
-  font-family: AlegreyaSans;
   font-size: 18px;
   padding-left: 11px;
 }
@@ -574,7 +572,6 @@
   width: 100px;
   height: 59px;
   outline: none;
-  font-family: AlegreyaSans;
   font-size: 18px;
   padding-left: 11px;
 }
@@ -617,7 +614,7 @@
 }
 
 .comment-block__radio-settings {
-  margin-top: 34px;
+  margin-top: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -626,8 +623,74 @@
   margin-left: 23px;
 }
 .comment-block__checkbox-settings {
-  margin-top: 20px;
+  margin-top: 8px;
 }
 .comment-block__delivery-button {
-  margin-top: 48px;
+  margin-top: 40px;
+}
+
+.radio-block-one__label {
+  font-family: AlegreyaSans-Medium;
+  color: #365a49;
+  font-size: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.radio-block-one__input {
+  width: 25px;
+  height: 26px;
+  margin-right: 10px;
+}
+
+.radio-block-two__label {
+  font-family: AlegreyaSans-Medium;
+  color: #365a49;
+  font-size: 18px;
+}
+.radio-block-two__input {
+  margin-right: 10px;
+}
+
+.checkbox-settings__label {
+  font-family: AlegreyaSans-Medium;
+  color: #365a49;
+  font-size: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.checkbox-settings__input {
+  width: 25px;
+  height: 26px;
+}
+
+.delivery-button__button-settings {
+  cursor: pointer;
+  width: 156px;
+  height: 58px;
+  background-color: #fff;
+  border-radius: 30px;
+  border-style: none;
+  font-size: 19px;
+  text-transform: uppercase;
+  font-family: AlegreyaSans-ExtraBold;
+  color: #365a49;
+}
+.delivery-button__button-settings:hover {
+  background-color: #365a49;
+  color: #fff;
+}
+.delivery-button__reset-settings {
+  border: none;
+  background: none;
+  font-family: AlegreyaSans-Medium;
+  font-size: 18px;
+  margin-left: 29px;
 }

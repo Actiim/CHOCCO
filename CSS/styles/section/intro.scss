@@ -432,7 +432,7 @@
 
 .comment-block {
     &__radio-settings {
-        margin-top: 34px;
+        margin-top: 30px;
         display: flex;
         .radio-settings {
             &__radio-block-two {
@@ -441,9 +441,56 @@
         }
     }
     &__checkbox-settings {
-        margin-top: 20px;
+        margin-top: 8px;
     }
     &__delivery-button {
-        margin-top: 48px;
+        margin-top: 40px;
+    }
+}
+
+.radio-block-one {
+    &__label {
+        @include label;
+        display: flex;
+        align-items: center;
+    }
+    &__input {
+        width: 25px;
+        height: 26px;
+        margin-right: 10px;
+    }
+}
+
+.radio-block-two {
+    &__label {
+        @include label;
+    }
+    &__input {
+        margin-right: 10px;
+    }
+}
+
+.checkbox-settings {
+    &__label {
+        @include label;
+        display: flex;
+        align-items: center;
+    }
+    &__input {
+        width: 25px;
+        height: 26px;
+    }
+}
+
+.delivery-button {
+    &__button-settings {
+        @include btn;
+    }
+    &__reset-settings {
+        border: none;
+        background: none;
+        font-family: AlegreyaSans-Medium;
+        font-size: 18px;
+        margin-left: 29px;
     }
 }
