@@ -8,6 +8,30 @@
         background-size: contain;
     }
     
+    // .test-1 {
+    //     width: 6px;
+    //     height: 6px;
+    //     background: #fff;
+    //     border-radius: 50%;
+    //     position: fixed;
+    //     top: 216px;
+    //     right: 51px;
+    // }
+    // .test-2 {
+    //     display: none;
+    //     width: 16px;
+    //     height: 16px;
+    //     background-color: transparent;
+    //     outline: 1px solid #fff;
+    //     border-radius: 50%;
+    //     position: fixed;
+    //     top: 211px;
+    //     right: 46px;
+    // }
+    // .test-1:hover .test-2 {
+    //     display: block;
+    // }    
+    // // разобраться с навигацией!!!
     .img-intro {
         &__bars {
             position: absolute;
@@ -299,6 +323,7 @@
     //         border-radius: 100%;
     //     }
     // }
+    // hover для фоток?
     .reviews {
         &__berry {
             position: absolute;
@@ -596,7 +621,7 @@
             font-family: AlegreyaSans-Medium;
             font-size: 18px;
             margin-left: 29px;
-            // Как работает сбросgit
+            // Как работает сброс?
         }
     }
     
@@ -668,6 +693,5 @@
             width: 20px;
             height: 16px;
         }
+        // hover для svg???
     }
-    
-    // hover для svg???
