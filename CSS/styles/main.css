@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import "settings/normalize.css";
 @font-face {
   font-family: AlegreyaSans-Black;
   src: url(/fonts/AlegreyaSans-Black.ttf);
