@@ -89,7 +89,7 @@
 }
 .img-intro__sheet-bottom {
   position: absolute;
-  top: 92%;
+  top: 91%;
   right: 20%;
 }
 .img-intro__berries-bottom {
@@ -411,8 +411,25 @@
   margin-top: 27px;
 }
 
-.rev-photo__together {
-  margin-left: 11px;
+.rev-photo__girl-one {
+  background: url(/img/girl_1.png);
+  width: 67px;
+  height: 67px;
+  border-radius: 50%;
+}
+.rev-photo__girl-two {
+  background: url(/img/girl_2.png);
+  width: 67px;
+  height: 67px;
+  border-radius: 50%;
+  margin-left: 11.7px;
+}
+.rev-photo__boy-one {
+  background: url(/img/boy_1.png);
+  width: 67px;
+  height: 67px;
+  border-radius: 50%;
+  margin-left: 11.7px;
 }
 
 .reviews__berry {
