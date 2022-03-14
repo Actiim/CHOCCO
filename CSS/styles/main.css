@@ -62,6 +62,27 @@
   margin: 0 auto;
 }
 
+.rev-photo__girl-one:hover {
+  width: 67px;
+  height: 67px;
+  outline: 7px solid #365a49;
+  border-radius: 50%;
+}
+
+.rev-photo__girl-two:hover {
+  width: 67px;
+  height: 67px;
+  outline: 7px solid #365a49;
+  border-radius: 50%;
+}
+
+.rev-photo__boy-one:hover {
+  width: 67px;
+  height: 67px;
+  outline: 7px solid #365a49;
+  border-radius: 50%;
+}
+
 .bg__intro {
   background: #86c3d7;
   width: 100wh;

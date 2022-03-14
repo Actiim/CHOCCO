@@ -1,0 +1,10 @@
+@each $rev-photo in (girl-one, girl-two, boy-one) {
+    .rev-photo__#{$rev-photo} {
+        &:hover {
+            width: 67px;
+            height: 67px;
+            outline: 7px solid #365a49;
+            border-radius: 50%;
+        }
+    }
+}
