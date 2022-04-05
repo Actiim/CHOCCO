@@ -1,6 +1,6 @@
                                 .bg__intro {
                                     background: #86c3d7;
-                                    width: 100wh;
+                                    width: 100vw;
                                     height: 100vh;
                                     background-image: url(/img/pattern_intro.png);
                                     background-repeat: no-repeat;
@@ -629,12 +629,18 @@
                                 }
                                 
                                 // map section
+                                .bg__map {
+                                    position: relative;
+                                }
+                                
                                 .picture__img {
                                     width: 100vw;
                                     height: 100vh;
                                 }
                                 
                                 .map__footer-bg {
+                                    position: absolute;
+                                    bottom: 0px;
                                     background-color: #fff;
                                     width: 100%;
                                     height: 93px;
