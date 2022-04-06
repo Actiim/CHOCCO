@@ -85,7 +85,6 @@
 
 .bg__intro {
   background: #86c3d7;
-  width: 100vw;
   height: 100vh;
   background-image: url(/img/pattern_intro.png);
   background-repeat: no-repeat;
@@ -139,7 +138,6 @@
 }
 
 .header {
-  padding-top: 24px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -149,20 +147,39 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-top: 24px;
 }
+
 .header__intro-list {
+  width: 634px;
+}
+@media (max-width: 1100px) {
+  .header__intro-list {
+    width: 500px;
+  }
+}
+.intro-list__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 634px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.intro-list__intro-text {
+.list__intro-text {
   font-family: AlegreyaSans-Regular;
   font-size: 18px;
+  margin-right: 19px;
+}
+
+.list__intro-text:last-child {
+  margin-right: 0px;
 }
 
 .intro-text__link {
