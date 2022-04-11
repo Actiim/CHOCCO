@@ -160,14 +160,22 @@
           justify-content: space-between;
   margin-top: 24px;
 }
-
 .header__intro-logo {
   min-width: 53px;
 }
-
 .header__intro-list {
   width: 634px;
   padding: 0 20px;
+}
+@media screen and (max-width: 768px) {
+  .header__intro-list {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .header__intro-tel {
+    display: none;
+  }
 }
 
 .intro-list__list {

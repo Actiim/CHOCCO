@@ -81,17 +81,30 @@
                                                                   align-items: center;
                                                                   justify-content: space-between;
                                                                   margin-top: 24px;
+                                                                  &__intro-logo {
+                                                                      min-width: 53px;
+                                                                  }
+                                                                  &__intro-list {
+                                                                      width: 634px;
+                                                                      padding: 0 20px;
+                                                                      @media screen and (max-width: 768px) {
+                                                                          display: none;
+                                                                      }
+                                                                  }
+                                                                  &__intro-tel {
+                                                                      @media screen and (max-width: 768px) {
+                                                                          display: none;
+                                                                      }
+                                                                  }
                                                               }
                                                               
-                                                              .header__intro-logo {
-                                                                  min-width: 53px;
-                                                              }
-                                                              
-                                                              .header__intro-list {
-                                                                  width: 634px;
-                                                                  padding: 0 20px;
-                                                              }
-                                                              
+                                                              //   .header__intro-list {
+                                                              //       width: 634px;
+                                                              //       padding: 0 20px;
+                                                              //       @media screen and (max-width: 768px) {
+                                                              //           display: none;
+                                                              //       }
+                                                              //   }
                                                               .intro-list__list {
                                                                   display: flex;
                                                                   flex-wrap: wrap;
