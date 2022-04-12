@@ -101,18 +101,9 @@
   background-repeat: no-repeat;
   background-position: right bottom;
   background-size: contain;
+  position: relative;
 }
 
-.img-intro__bars {
-  position: absolute;
-  right: 130px;
-  bottom: 130px;
-}
-.img-intro__sheet-top {
-  position: absolute;
-  right: 110px;
-  bottom: 155px;
-}
 .img-intro__sheet-left {
   position: absolute;
   top: 93%;
@@ -127,11 +118,6 @@
   position: absolute;
   top: 93%;
   right: 9%;
-}
-.img-intro__berries-top {
-  position: absolute;
-  top: 68%;
-  right: 18%;
 }
 
 .intro__container {
@@ -213,6 +199,61 @@
   white-space: nowrap;
 }
 
+@media screen and (max-width: 992px) {
+  .container__intro-main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container__intro-main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.intro-main__img-intro-bars {
+  position: absolute;
+  right: 123px;
+  bottom: 179px;
+  max-width: 503px;
+}
+@media screen and (max-width: 992px) {
+  .intro-main__img-intro-bars {
+    position: relative;
+    right: auto;
+    bottom: auto;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+}
+@media screen and (max-width: 768px) {
+  .intro-main__img-intro-bars {
+    width: 343px;
+    height: 356px;
+    position: relative;
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
+}
+@media screen and (max-width: 480px) {
+  .intro-main__img-intro-bars {
+    width: 317px;
+    height: 330px;
+    position: relative;
+  }
+}
 .intro-main__text-first {
   font-family: AlegreyaSans-Bold;
   font-size: 48px;
@@ -220,7 +261,6 @@
   width: 323px;
   text-transform: uppercase;
 }
-
 .intro-main__text-second {
   font-family: AlegreyaSans-Regular;
   font-size: 21px;
@@ -229,7 +269,6 @@
   font-weight: normal;
   margin-top: 10px;
 }
-
 .intro-main__intro-button {
   cursor: pointer;
   width: 156px;
@@ -246,6 +285,27 @@
 .intro-main__intro-button:hover {
   background-color: #365a49;
   color: #fff;
+}
+
+.intro-main__img-intro-bars::before {
+  content: "";
+  display: block;
+  background-image: url(/img/sheet-top.png);
+  position: absolute;
+  width: 250px;
+  height: 208px;
+  bottom: 3%;
+  left: 55%;
+}
+.intro-main__img-intro-bars::after {
+  content: "";
+  display: block;
+  background-image: url(/img/berries-top.png);
+  position: absolute;
+  width: 220px;
+  height: 208px;
+  top: 67%;
+  left: 10%;
 }
 
 .container__intro-footer {
