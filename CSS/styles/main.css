@@ -64,7 +64,12 @@
 }
 @media screen and (max-width: 992px) {
   .container {
-    padding: 0px 24px;
+    padding: 0 24px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .container {
+    padding: 0 9px;
   }
 }
 
@@ -104,20 +109,25 @@
   position: relative;
 }
 
-.img-intro__sheet-left {
-  position: absolute;
-  top: 93%;
-  left: 10%;
-}
 .img-intro__sheet-bottom {
   position: absolute;
   top: 92%;
   right: 20%;
 }
+@media screen and (max-width: 768px) {
+  .img-intro__sheet-bottom {
+    display: none;
+  }
+}
 .img-intro__berries-bottom {
   position: absolute;
   top: 93%;
   right: 9%;
+}
+@media screen and (max-width: 768px) {
+  .img-intro__berries-bottom {
+    display: none;
+  }
 }
 
 .intro__container {
@@ -132,6 +142,20 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   height: 100vh;
+}
+@media screen and (max-width: 768px) {
+  .intro__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
 }
 
 .header {
@@ -227,6 +251,36 @@
   bottom: 179px;
   max-width: 503px;
 }
+@media screen and (max-width: 768px) {
+  .intro-main__img-intro-bars::before {
+    content: "";
+    display: block;
+    background-image: url(/img/листья_адаптив.png);
+    position: absolute;
+    width: 210px;
+    height: 226px;
+    top: 40%;
+    left: 48%;
+  }
+}
+.intro-main__img-intro-bars::after {
+  content: "";
+  display: block;
+  background-image: url(/img/berries-top.png);
+  position: absolute;
+  width: 220px;
+  height: 208px;
+  top: 67%;
+  left: 10%;
+}
+@media screen and (max-width: 768px) {
+  .intro-main__img-intro-bars::after {
+    background-image: url(/img/ягоды_адаптив.png);
+    width: 329px;
+    height: 231px;
+    top: 130px;
+  }
+}
 @media screen and (max-width: 992px) {
   .intro-main__img-intro-bars {
     position: relative;
@@ -241,7 +295,6 @@
   .intro-main__img-intro-bars {
     width: 343px;
     height: 356px;
-    position: relative;
     -webkit-box-ordinal-group: 0;
         -ms-flex-order: -1;
             order: -1;
@@ -251,17 +304,63 @@
   .intro-main__img-intro-bars {
     width: 317px;
     height: 330px;
-    position: relative;
   }
 }
-.intro-main__text-first {
+@media screen and (max-width: 768px) {
+  .intro-main__text-button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.text-button__text-first {
   font-family: AlegreyaSans-Bold;
   font-size: 48px;
   color: #fff;
-  width: 323px;
+  max-width: 323px;
   text-transform: uppercase;
 }
-.intro-main__text-second {
+.text-button__text-first::after {
+  content: "";
+  display: block;
+  background-image: url(/img/sheet-left.png);
+  position: absolute;
+  width: 59px;
+  height: 112px;
+  top: 93%;
+  left: 10%;
+}
+@media screen and (max-width: 768px) {
+  .text-button__text-first::after {
+    background-size: contain;
+    position: absolute;
+    width: 39px;
+    height: 78px;
+    top: 36%;
+    left: 26%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .text-button__text-first {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    max-width: 658px;
+    text-align: center;
+    margin-top: 38px;
+  }
+}
+.text-button__text-second {
   font-family: AlegreyaSans-Regular;
   font-size: 21px;
   width: 342px;
@@ -269,7 +368,12 @@
   font-weight: normal;
   margin-top: 10px;
 }
-.intro-main__intro-button {
+@media screen and (max-width: 768px) {
+  .text-button__text-second {
+    text-align: center;
+  }
+}
+.text-button__intro-button {
   cursor: pointer;
   width: 156px;
   height: 58px;
@@ -282,34 +386,18 @@
   color: #365a49;
   margin-top: 32px;
 }
-.intro-main__intro-button:hover {
+.text-button__intro-button:hover {
   background-color: #365a49;
   color: #fff;
 }
 
-.intro-main__img-intro-bars::before {
-  content: "";
-  display: block;
-  background-image: url(/img/sheet-top.png);
-  position: absolute;
-  width: 250px;
-  height: 208px;
-  bottom: 3%;
-  left: 55%;
-}
-.intro-main__img-intro-bars::after {
-  content: "";
-  display: block;
-  background-image: url(/img/berries-top.png);
-  position: absolute;
-  width: 220px;
-  height: 208px;
-  top: 67%;
-  left: 10%;
-}
-
 .container__intro-footer {
   margin-bottom: 47px;
+}
+@media screen and (max-width: 768px) {
+  .container__intro-footer {
+    display: none;
+  }
 }
 
 .intro-footer__intro-list {
@@ -319,7 +407,17 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 460px;
+  max-width: 460px;
+}
+.intro-footer__intro-list::before {
+  content: "";
+  display: block;
+  background-image: url(/img/sheet-top.png);
+  position: absolute;
+  width: 250px;
+  height: 208px;
+  bottom: 23%;
+  left: 68%;
 }
 
 .intro-list__intro-footer {
@@ -778,6 +876,7 @@
           align-items: center;
   position: relative;
 }
+
 .radio-block-one__label > input {
   position: absolute;
   z-index: -1;
