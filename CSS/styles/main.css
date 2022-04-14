@@ -108,6 +108,18 @@
   background-size: contain;
   position: relative;
 }
+@media screen and (max-width: 768px) {
+  .bg__intro {
+    background-position: 100% 15%;
+    background-size: 512px 635px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .bg__intro {
+    background-position: 100% 15%;
+    background-size: 312px 396px;
+  }
+}
 
 .img-intro__sheet-bottom {
   position: absolute;
@@ -253,14 +265,7 @@
 }
 @media screen and (max-width: 768px) {
   .intro-main__img-intro-bars::before {
-    content: "";
-    display: block;
-    background-image: url(/img/листья_адаптив.png);
-    position: absolute;
-    width: 210px;
-    height: 226px;
-    top: 40%;
-    left: 48%;
+    display: none;
   }
 }
 .intro-main__img-intro-bars::after {
@@ -275,10 +280,20 @@
 }
 @media screen and (max-width: 768px) {
   .intro-main__img-intro-bars::after {
-    background-image: url(/img/ягоды_адаптив.png);
-    width: 329px;
+    background-image: url(/img/kartinka_1_adaptiv.png);
+    width: 368px;
     height: 231px;
-    top: 130px;
+    top: 140px;
+    left: 1px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .intro-main__img-intro-bars::after {
+    width: 100%;
+    max-width: 341px;
+    height: 215px;
+    background-size: contain;
+    background-repeat: no-repeat;
   }
 }
 @media screen and (max-width: 992px) {
@@ -340,12 +355,7 @@
 }
 @media screen and (max-width: 768px) {
   .text-button__text-first::after {
-    background-size: contain;
-    position: absolute;
-    width: 39px;
-    height: 78px;
-    top: 36%;
-    left: 26%;
+    display: none;
   }
 }
 @media screen and (max-width: 768px) {
@@ -360,6 +370,11 @@
     margin-top: 38px;
   }
 }
+@media screen and (max-width: 480px) {
+  .text-button__text-first {
+    font-size: 40px;
+  }
+}
 .text-button__text-second {
   font-family: AlegreyaSans-Regular;
   font-size: 21px;
@@ -371,6 +386,12 @@
 @media screen and (max-width: 768px) {
   .text-button__text-second {
     text-align: center;
+  }
+}
+@media screen and (max-width: 480px) {
+  .text-button__text-second {
+    max-width: 291px;
+    font-size: 18px;
   }
 }
 .text-button__intro-button {
@@ -417,7 +438,7 @@
   width: 250px;
   height: 208px;
   bottom: 23%;
-  left: 68%;
+  right: 5%;
 }
 
 .intro-list__intro-footer {

@@ -11,6 +11,14 @@
                                                               background-position: right bottom;
                                                               background-size: contain;
                                                               position: relative;
+                                                              @media screen and (max-width: 768px) {
+                                                                  background-position: 100% 15%;
+                                                                  background-size: 512px 635px;
+                                                              }
+                                                              @media screen and (max-width: 480px) {
+                                                                  background-position: 100% 15%;
+                                                                  background-size: 312px 396px;
+                                                              }
                                                           }
                                                           
                                                           .img-intro {
@@ -113,14 +121,7 @@
                                                                   max-width: 503px;
                                                                   &::before {
                                                                       @media screen and (max-width: 768px) {
-                                                                          content: "";
-                                                                          display: block;
-                                                                          background-image: url(/img/листья_адаптив.png);
-                                                                          position: absolute;
-                                                                          width: 210px;
-                                                                          height: 226px;
-                                                                          top: 40%;
-                                                                          left: 48%;
+                                                                          display: none;
                                                                       }
                                                                   }
                                                                   &::after {
@@ -133,10 +134,18 @@
                                                                       top: 67%;
                                                                       left: 10%;
                                                                       @media screen and (max-width: 768px) {
-                                                                          background-image: url(/img/ягоды_адаптив.png);
-                                                                          width: 329px;
+                                                                          background-image: url(/img/kartinka_1_adaptiv.png);
+                                                                          width: 368px;
                                                                           height: 231px;
-                                                                          top: 130px;
+                                                                          top: 140px;
+                                                                          left: 1px;
+                                                                      }
+                                                                      @media screen and (max-width: 480px) {
+                                                                          width: 100%;
+                                                                          max-width: 341px;
+                                                                          height: 215px;
+                                                                          background-size: contain;
+                                                                          background-repeat: no-repeat;
                                                                       }
                                                                   }
                                                                   @media screen and (max-width: 992px) {
@@ -181,12 +190,7 @@
                                                                       top: 93%;
                                                                       left: 10%;
                                                                       @media screen and (max-width: 768px) {
-                                                                          background-size: contain;
-                                                                          position: absolute;
-                                                                          width: 39px;
-                                                                          height: 78px;
-                                                                          top: 36%;
-                                                                          left: 26%;
+                                                                          display: none;
                                                                       }
                                                                   }
                                                                   @media screen and (max-width: 768px) {
@@ -195,6 +199,9 @@
                                                                       max-width: 658px;
                                                                       text-align: center;
                                                                       margin-top: 38px;
+                                                                  }
+                                                                  @media screen and (max-width: 480px) {
+                                                                      font-size: 40px;
                                                                   }
                                                               }
                                                               &__text-second {
@@ -206,6 +213,10 @@
                                                                   margin-top: 10px;
                                                                   @media screen and (max-width: 768px) {
                                                                       text-align: center;
+                                                                  }
+                                                                  @media screen and (max-width: 480px) {
+                                                                      max-width: 291px;
+                                                                      font-size: 18px;
                                                                   }
                                                               }
                                                               &__intro-button {
@@ -233,7 +244,7 @@
                                                                   width: 250px;
                                                                   height: 208px;
                                                                   bottom: 23%;
-                                                                  left: 68%;
+                                                                  right: 5%;
                                                               }
                                                           }
                                                           
