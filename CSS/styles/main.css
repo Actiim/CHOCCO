@@ -527,6 +527,7 @@
 }
 
 .container__info-main-block {
+  margin-top: 84px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -534,9 +535,16 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+@media screen and (max-width: 480px) {
+  .container__info-main-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
 
 .info-main-block__together {
-  margin-top: 84px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -548,6 +556,18 @@
       -ms-flex-align: center;
           align-items: center;
 }
+@media screen and (max-width: 480px) {
+  .info-main-block__together {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-top: 40px;
+  }
+  .info-main-block__together:first-child {
+    margin-top: 0;
+  }
+}
 
 .together__icon {
   display: -webkit-box;
@@ -556,22 +576,61 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 125px;
   height: 125px;
   background-color: #f2f5f4;
   border-radius: 50%;
 }
-.together__main {
+.together__info-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media screen and (max-width: 480px) {
+  .together__info-text {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin-left: 13px;
+  }
+}
+
+.icon__description {
+  width: 66px;
+  height: 69px;
+}
+
+.info-text__main {
   margin-top: 35px;
   font-family: AlegreyaSans-Bold;
   font-size: 27px;
 }
-.together__text {
+@media screen and (max-width: 480px) {
+  .info-text__main {
+    margin-top: 0;
+  }
+}
+.info-text__text {
   margin-top: 25px;
   text-align: center;
   font-family: AlegreyaSans-Regular;
   color: #666;
-  padding: 0 30px 0 30px;
+  max-width: 252px;
+}
+@media screen and (max-width: 480px) {
+  .info-text__text {
+    text-align: left;
+  }
 }
 
 @media screen and (max-width: 480px) {
