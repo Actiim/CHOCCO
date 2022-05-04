@@ -408,12 +408,23 @@
                                                           }
                                                           
                                                           .reviews__main {
+                                                              position: relative;
                                                               padding-top: 69px;
                                                               display: flex;
                                                               justify-content: center;
                                                               font-family: AlegreyaSans-Bold;
                                                               text-transform: uppercase;
                                                               font-size: 48px;
+                                                              &::after {
+                                                                  content: "";
+                                                                  display: block;
+                                                                  background-image: url(/img/Ягода.png);
+                                                                  position: absolute;
+                                                                  left: 75%;
+                                                                  top: 40%;
+                                                                  width: 150px;
+                                                                  height: 86px;
+                                                              }
                                                           }
                                                           
                                                           .reviews__info-block {
@@ -497,11 +508,6 @@
                                                           }
                                                           
                                                           .reviews {
-                                                              &__berry {
-                                                                  position: absolute;
-                                                                  right: 22%;
-                                                                  top: 50px;
-                                                              }
                                                               &__sheet-left {
                                                                   position: absolute;
                                                                   left: 0px;
