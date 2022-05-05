@@ -424,24 +424,40 @@
                                                                   top: 40%;
                                                                   width: 150px;
                                                                   height: 86px;
+                                                                  @media screen and (max-width: 768px) {
+                                                                      top: 10%;
+                                                                  }
                                                               }
                                                           }
                                                           
                                                           .reviews__info-block {
                                                               margin-top: 44px;
                                                               background-color: #f8faf9;
-                                                              width: 940px;
+                                                              max-width: 940px;
                                                               height: 345px;
                                                               background-image: url(/img/Слой_2.png);
                                                               background-repeat: no-repeat;
                                                               background-position: top right;
                                                               display: flex;
                                                               align-items: center;
+                                                              @media screen and (max-width: 768px) {
+                                                                  flex-direction: column;
+                                                                  align-items: center;
+                                                                  max-width: 720px;
+                                                                  height: 417px;
+                                                                  background-size: 125px 167px;
+                                                              }
+                                                              @media screen and (max-width: 480px) {
+                                                                  background-size: 119px 167px;
+                                                              }
                                                           }
                                                           
                                                           .info-block {
                                                               &__rev-img {
                                                                   margin-left: 45px;
+                                                                  @media screen and (max-width: 768px) {
+                                                                      margin-left: 0;
+                                                                  }
                                                               }
                                                               &__rev-text {
                                                                   display: flex;
@@ -449,11 +465,28 @@
                                                                   margin-left: 20px;
                                                                   justify-content: space-around;
                                                                   height: 260px;
+                                                                  @media screen and (max-width: 768px) {
+                                                                      align-items: center;
+                                                                      margin: 31px 0 0 0;
+                                                                      justify-content: space-between;
+                                                                      max-height: 169px;
+                                                                  }
+                                                                  @media screen and (max-width: 480px) {
+                                                                      margin-top: 21px;
+                                                                  }
                                                               }
                                                           }
                                                           
                                                           .rev-img__alena {
                                                               max-width: none;
+                                                              @media screen and (max-width: 768px) {
+                                                                  width: 131px;
+                                                                  height: 133px;
+                                                                  margin-top: 53px;
+                                                              }
+                                                              @media screen and (max-width: 320px) {
+                                                                  margin-top: 21px;
+                                                              }
                                                           }
                                                           
                                                           .rev-text {
@@ -466,10 +499,18 @@
                                                                   font-family: AlegreyaSans-Regular;
                                                                   font-size: 18px;
                                                                   color: #666666;
+                                                                  @media screen and (max-width: 768px) {
+                                                                      margin-right: auto;
+                                                                      max-width: 677px;
+                                                                      text-align: center;
+                                                                  }
                                                               }
                                                               &__end {
                                                                   font-family: AlegreyaSans-Bold;
                                                                   font-size: 18px;
+                                                                  @media screen and (max-width: 768px) {
+                                                                      margin-top: 23px;
+                                                                  }
                                                               }
                                                           }
                                                           

@@ -672,11 +672,16 @@
   width: 150px;
   height: 86px;
 }
+@media screen and (max-width: 768px) {
+  .reviews__main::after {
+    top: 10%;
+  }
+}
 
 .reviews__info-block {
   margin-top: 44px;
   background-color: #f8faf9;
-  width: 940px;
+  max-width: 940px;
   height: 345px;
   background-image: url(/img/Слой_2.png);
   background-repeat: no-repeat;
@@ -688,9 +693,33 @@
       -ms-flex-align: center;
           align-items: center;
 }
+@media screen and (max-width: 768px) {
+  .reviews__info-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    max-width: 720px;
+    height: 417px;
+    background-size: 125px 167px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .reviews__info-block {
+    background-size: 119px 167px;
+  }
+}
 
 .info-block__rev-img {
   margin-left: 45px;
+}
+@media screen and (max-width: 768px) {
+  .info-block__rev-img {
+    margin-left: 0;
+  }
 }
 .info-block__rev-text {
   display: -webkit-box;
@@ -705,9 +734,38 @@
       justify-content: space-around;
   height: 260px;
 }
+@media screen and (max-width: 768px) {
+  .info-block__rev-text {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 31px 0 0 0;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    max-height: 169px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .info-block__rev-text {
+    margin-top: 21px;
+  }
+}
 
 .rev-img__alena {
   max-width: none;
+}
+@media screen and (max-width: 768px) {
+  .rev-img__alena {
+    width: 131px;
+    height: 133px;
+    margin-top: 53px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .rev-img__alena {
+    margin-top: 21px;
+  }
 }
 
 .rev-text__main {
@@ -720,9 +778,21 @@
   font-size: 18px;
   color: #666666;
 }
+@media screen and (max-width: 768px) {
+  .rev-text__mid {
+    margin-right: auto;
+    max-width: 677px;
+    text-align: center;
+  }
+}
 .rev-text__end {
   font-family: AlegreyaSans-Bold;
   font-size: 18px;
+}
+@media screen and (max-width: 768px) {
+  .rev-text__end {
+    margin-top: 23px;
+  }
 }
 
 .review__list {
