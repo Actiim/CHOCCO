@@ -553,11 +553,19 @@
                                                                   position: absolute;
                                                                   left: 0px;
                                                                   top: 83%;
+                                                                  @media screen and (max-width: 768px) {
+                                                                      max-width: 76px;
+                                                                      max-height: 317px;
+                                                                  }
                                                               }
                                                               &__berries-left {
                                                                   position: absolute;
-                                                                  left: 0px;
                                                                   top: 89%;
+                                                                  @media screen and (max-width: 768px) {
+                                                                      max-width: 95px;
+                                                                      max-height: 176px;
+                                                                      right: 90%;
+                                                                  }
                                                               }
                                                           }
                                                           
@@ -576,17 +584,28 @@
                                                               padding-top: 86px;
                                                           }
                                                           
-                                                          .delivery-section__main {
-                                                              font-family: AlegreyaSans-Bold;
-                                                              font-size: 48px;
-                                                              text-transform: uppercase;
-                                                              color: #365a49;
+                                                          .delivery-section {
+                                                              &__main {
+                                                                  font-family: AlegreyaSans-Bold;
+                                                                  font-size: 48px;
+                                                                  text-transform: uppercase;
+                                                                  color: #365a49;
+                                                              }
+                                                              &__address-block {
+                                                                  max-width: 460px;
+                                                              }
+                                                              &__comment-block {
+                                                                  max-width: 460px;
+                                                              }
                                                           }
                                                           
                                                           .container__delivery-section {
                                                               margin-top: 54px;
                                                               display: flex;
                                                               justify-content: space-between;
+                                                              @media screen and (max-width: 768px) {
+                                                                  flex-direction: column;
+                                                              }
                                                           }
                                                           
                                                           .address-block__main-info {

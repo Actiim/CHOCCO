@@ -23,7 +23,7 @@
 
 @mixin input {
     border: none;
-    width: 220px;
+    max-width: 220px;
     height: 59px;
     outline: none;
     font-size: 18px;
@@ -32,7 +32,7 @@
 
 @mixin input-long {
     border: none;
-    width: 460px;
+    max-width: 460px;
     height: 59px;
     outline: none;
     font-size: 18px;
@@ -41,7 +41,7 @@
 
 @mixin input-short {
     border: none;
-    width: 100px;
+    max-width: 100px;
     height: 59px;
     outline: none;
     font-size: 18px;
