@@ -612,6 +612,7 @@
                                                               flex-direction: column;
                                                               max-width: 220px;
                                                               width: 100%;
+                                                              flex-basis: 48%;
                                                           }
                                                           
                                                           .name-number {
@@ -632,6 +633,7 @@
                                                                   justify-content: space-between;
                                                                   max-width: 460px;
                                                                   height: 283px;
+                                                                  margin-right: 20px;
                                                               }
                                                               //   &__location-info {
                                                               //       margin-top: 20px;
@@ -666,6 +668,7 @@
                                                               flex-direction: column;
                                                               max-width: 100px;
                                                               width: 100%;
+                                                              flex-basis: 24%;
                                                           }
                                                           
                                                           .house-info {
