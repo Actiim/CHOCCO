@@ -591,9 +591,6 @@
                                                                   text-transform: uppercase;
                                                                   color: #365a49;
                                                               }
-                                                              &__address-block {
-                                                                  max-width: 460px;
-                                                              }
                                                               &__comment-block {
                                                                   max-width: 460px;
                                                               }
@@ -608,15 +605,10 @@
                                                               }
                                                           }
                                                           
-                                                          .address-block__main-info {
-                                                              display: flex;
-                                                              justify-content: space-between;
-                                                              width: 460px;
-                                                          }
-                                                          
                                                           .main-info__name-number {
                                                               display: flex;
                                                               flex-direction: column;
+                                                              max-width: 220px;
                                                           }
                                                           
                                                           .name-number {
@@ -630,13 +622,29 @@
                                                               }
                                                           }
                                                           
-                                                          .address-block__location-info {
-                                                              margin-top: 20px;
+                                                          .address-block {
+                                                              &__main-info {
+                                                                  display: flex;
+                                                                  flex-wrap: wrap;
+                                                                  justify-content: space-between;
+                                                                  max-width: 460px;
+                                                                  height: 283px;
+                                                              }
+                                                              &__location-info {
+                                                                  margin-top: 20px;
+                                                              }
+                                                              &__adr-flex {
+                                                                  margin-top: 20px;
+                                                                  display: flex;
+                                                                  justify-content: space-between;
+                                                              }
                                                           }
                                                           
                                                           .location-info__street {
                                                               display: flex;
                                                               flex-direction: column;
+                                                              max-width: 460px;
+                                                              width: 100%
                                                           }
                                                           
                                                           .street {
@@ -650,15 +658,11 @@
                                                               }
                                                           }
                                                           
-                                                          .address-block__adr-flex {
-                                                              margin-top: 20px;
-                                                              display: flex;
-                                                              justify-content: space-between;
-                                                          }
-                                                          
                                                           .adr-flex__house-info {
                                                               display: flex;
                                                               flex-direction: column;
+                                                              max-width: 100px;
+                                                              width: 100%;
                                                           }
                                                           
                                                           .house-info {
@@ -675,6 +679,8 @@
                                                           .comment-block__com-settings {
                                                               display: flex;
                                                               flex-direction: column;
+                                                              max-width: 460px;
+                                                              width: 100%;
                                                           }
                                                           
                                                           .com-settings {
