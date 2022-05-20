@@ -29,6 +29,10 @@
     padding-left: 11px;
     margin-bottom: 20px;
     width: 100%;
+    @media screen and (max-width: 768px) {
+        height: 35px;
+        margin-bottom: 0px;
+    }
 }
 
 @mixin input-long {
@@ -39,6 +43,10 @@
     padding-left: 11px;
     margin-bottom: 20px;
     width: 100%;
+    @media screen and (max-width: 768px) {
+        height: 35px;
+        margin-bottom: 0px;
+    }
 }
 
 @mixin input-short {
@@ -48,6 +56,9 @@
     font-size: 18px;
     padding-left: 11px;
     width: 100%;
+    @media screen and (max-width: 768px) {
+        height: 35px;
+    }
 }
 
 @mixin border {

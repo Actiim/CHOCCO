@@ -871,7 +871,8 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-top: 86px;
+  padding-top: 100px;
+  text-align: center;
 }
 
 .delivery-main__main {
@@ -879,6 +880,11 @@
   font-size: 48px;
   text-transform: uppercase;
   color: #365a49;
+}
+@media screen and (max-width: 480px) {
+  .delivery-main__main {
+    font-size: 40px;
+  }
 }
 
 .delivery-section__comment-block {
@@ -901,6 +907,15 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 40px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .container__address-block {
+    margin-top: 36px;
   }
 }
 
@@ -917,6 +932,11 @@
   -ms-flex-preferred-size: 48%;
       flex-basis: 48%;
 }
+@media screen and (max-width: 768px) {
+  .main-info__name-number {
+    margin-bottom: 17px;
+  }
+}
 
 .name-number__label {
   font-family: AlegreyaSans-Medium;
@@ -932,6 +952,12 @@
   padding-left: 11px;
   margin-bottom: 20px;
   width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .name-number__input {
+    height: 35px;
+    margin-bottom: 0px;
+  }
 }
 .name-number__input:hover {
   outline: 3px solid #dee2bd;
@@ -953,6 +979,12 @@
   height: 283px;
   margin-right: 20px;
 }
+@media screen and (max-width: 768px) {
+  .address-block__main-info {
+    height: auto;
+    margin-right: 0px;
+  }
+}
 
 .location-info__street {
   display: -webkit-box;
@@ -964,6 +996,11 @@
           flex-direction: column;
   max-width: 460px;
   width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .location-info__street {
+    margin-bottom: 17px;
+  }
 }
 
 .street__label {
@@ -980,6 +1017,12 @@
   padding-left: 11px;
   margin-bottom: 20px;
   width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .street__input {
+    height: 35px;
+    margin-bottom: 0px;
+  }
 }
 .street__input:hover {
   outline: 3px solid #dee2bd;
@@ -998,8 +1041,13 @@
           flex-direction: column;
   max-width: 100px;
   width: 100%;
-  -ms-flex-preferred-size: 24%;
-      flex-basis: 24%;
+  -ms-flex-preferred-size: 22%;
+      flex-basis: 22%;
+}
+@media screen and (max-width: 768px) {
+  .adr-flex__house-info {
+    margin-bottom: 17px;
+  }
 }
 
 .house-info__label {
@@ -1015,6 +1063,11 @@
   font-size: 18px;
   padding-left: 11px;
   width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .house-info__input {
+    height: 35px;
+  }
 }
 .house-info__input:hover {
   outline: 3px solid #dee2bd;
@@ -1055,10 +1108,10 @@
 .com-settings__textarea:focus {
   outline: 3px solid #dee2bd;
 }
-
-.test {
-  max-width: 460px;
-  width: 100%;
+@media screen and (max-width: 768px) {
+  .com-settings__textarea {
+    height: 80px;
+  }
 }
 
 .comment-block__radio-settings {
@@ -1068,14 +1121,61 @@
   display: flex;
   width: 348px;
 }
+@media screen and (max-width: 480px) {
+  .comment-block__radio-settings {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: auto;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 380px) {
+  .comment-block__radio-settings {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
 .comment-block__radio-settings .radio-settings__radio-block-two {
   margin-left: 23px;
+}
+@media screen and (max-width: 380px) {
+  .comment-block__radio-settings .radio-settings__radio-block-two {
+    margin: 18px 18px 0 0;
+  }
 }
 .comment-block__checkbox-settings {
   margin-top: 8px;
 }
+@media screen and (max-width: 480px) {
+  .comment-block__checkbox-settings {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 18px;
+  }
+}
 .comment-block__delivery-button {
   margin-top: 40px;
+}
+@media screen and (max-width: 768px) {
+  .comment-block__delivery-button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .radio-block-one__label {
@@ -1266,11 +1366,12 @@
 
 .bg__map {
   position: relative;
-}
-
-.picture__img {
   width: 100vw;
   height: 100vh;
+  background-image: url(/img/карта.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
 }
 
 .map__footer-bg {
@@ -1279,6 +1380,11 @@
   background-color: #fff;
   width: 100%;
   height: 93px;
+}
+@media screen and (max-width: 480px) {
+  .map__footer-bg {
+    height: 153px;
+  }
 }
 
 .footer-bg__info {
@@ -1293,6 +1399,17 @@
       -ms-flex-align: center;
           align-items: center;
 }
+@media screen and (max-width: 480px) {
+  .footer-bg__info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
 
 .info__adress-number {
   display: -webkit-box;
@@ -1302,6 +1419,14 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+@media screen and (max-width: 480px) {
+  .info__adress-number {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 20px;
+  }
 }
 
 .adress-number__adress {

@@ -581,7 +581,8 @@
                                                           .container__delivery-main {
                                                               display: flex;
                                                               justify-content: center;
-                                                              padding-top: 86px;
+                                                              padding-top: 100px;
+                                                              text-align: center;
                                                           }
                                                           
                                                           .delivery-main__main {
@@ -589,6 +590,9 @@
                                                               font-size: 48px;
                                                               text-transform: uppercase;
                                                               color: #365a49;
+                                                              @media screen and (max-width: 480px) {
+                                                                  font-size: 40px;
+                                                              }
                                                           }
                                                           
                                                           .delivery-section {
@@ -604,6 +608,11 @@
                                                               justify-content: space-between;
                                                               @media screen and (max-width: 768px) {
                                                                   flex-direction: column;
+                                                                  align-items: center;
+                                                                  margin-top: 40px;
+                                                              }
+                                                              @media screen and (max-width: 480px) {
+                                                                  margin-top: 36px;
                                                               }
                                                           }
                                                           
@@ -613,6 +622,9 @@
                                                               max-width: 220px;
                                                               width: 100%;
                                                               flex-basis: 48%;
+                                                              @media screen and (max-width: 768px) {
+                                                                  margin-bottom: 17px;
+                                                              }
                                                           }
                                                           
                                                           .name-number {
@@ -634,22 +646,21 @@
                                                                   max-width: 460px;
                                                                   height: 283px;
                                                                   margin-right: 20px;
+                                                                  @media screen and (max-width: 768px) {
+                                                                      height: auto;
+                                                                      margin-right: 0px;
+                                                                  }
                                                               }
-                                                              //   &__location-info {
-                                                              //       margin-top: 20px;
-                                                              //   }
-                                                              //   &__adr-flex {
-                                                              //       margin-top: 20px;
-                                                              //       display: flex;
-                                                              //       justify-content: space-between;
-                                                              //   }
                                                           }
                                                           
                                                           .location-info__street {
                                                               display: flex;
                                                               flex-direction: column;
                                                               max-width: 460px;
-                                                              width: 100%
+                                                              width: 100%;
+                                                              @media screen and (max-width: 768px) {
+                                                                  margin-bottom: 17px;
+                                                              }
                                                           }
                                                           
                                                           .street {
@@ -668,7 +679,10 @@
                                                               flex-direction: column;
                                                               max-width: 100px;
                                                               width: 100%;
-                                                              flex-basis: 24%;
+                                                              flex-basis: 22%;
+                                                              @media screen and (max-width: 768px) {
+                                                                  margin-bottom: 17px;
+                                                              }
                                                           }
                                                           
                                                           .house-info {
@@ -702,12 +716,10 @@
                                                                   outline: none;
                                                                   border: none;
                                                                   padding: 11px 11px;
+                                                                  @media screen and (max-width: 768px) {
+                                                                      height: 80px;
+                                                                  }
                                                               }
-                                                          }
-                                                          
-                                                          .test {
-                                                              max-width: 460px;
-                                                              width: 100%;
                                                           }
                                                           
                                                           .comment-block {
@@ -715,17 +727,38 @@
                                                                   margin-top: 30px;
                                                                   display: flex;
                                                                   width: 348px;
+                                                                  @media screen and (max-width: 480px) {
+                                                                      justify-content: center;
+                                                                      width: auto;
+                                                                      flex-wrap: wrap;
+                                                                  }
+                                                                  @media screen and (max-width: 380px) {
+                                                                      flex-direction: column;
+                                                                      align-items: center;
+                                                                  }
                                                                   .radio-settings {
                                                                       &__radio-block-two {
                                                                           margin-left: 23px;
+                                                                          @media screen and (max-width: 380px) {
+                                                                              margin: 18px 18px 0 0;
+                                                                          }
                                                                       }
                                                                   }
                                                               }
                                                               &__checkbox-settings {
                                                                   margin-top: 8px;
+                                                                  @media screen and (max-width: 480px) {
+                                                                      display: flex;
+                                                                      justify-content: center;
+                                                                      margin-top: 18px;
+                                                                  }
                                                               }
                                                               &__delivery-button {
                                                                   margin-top: 40px;
+                                                                  @media screen and (max-width: 768px) {
+                                                                      display: flex;
+                                                                      justify-content: center;
+                                                                  }
                                                               }
                                                           }
                                                           
@@ -882,11 +915,12 @@
                                                           // map section
                                                           .bg__map {
                                                               position: relative;
-                                                          }
-                                                          
-                                                          .picture__img {
                                                               width: 100vw;
                                                               height: 100vh;
+                                                              background-image: url(/img/карта.png);
+                                                              background-repeat: no-repeat;
+                                                              background-size: cover;
+                                                              position: relative;
                                                           }
                                                           
                                                           .map__footer-bg {
@@ -895,6 +929,9 @@
                                                               background-color: #fff;
                                                               width: 100%;
                                                               height: 93px;
+                                                              @media screen and (max-width: 480px) {
+                                                                  height: 153px;
+                                                              }
                                                           }
                                                           
                                                           .footer-bg__info {
@@ -902,11 +939,19 @@
                                                               display: flex;
                                                               justify-content: space-between;
                                                               align-items: center;
+                                                              @media screen and (max-width: 480px) {
+                                                                  flex-direction: column;
+                                                                  justify-content: center;
+                                                              }
                                                           }
                                                           
                                                           .info__adress-number {
                                                               display: flex;
                                                               flex-direction: column;
+                                                              @media screen and (max-width: 480px) {
+                                                                  align-items: center;
+                                                                  margin-bottom: 20px;
+                                                              }
                                                           }
                                                           
                                                           .adress-number__adress {
