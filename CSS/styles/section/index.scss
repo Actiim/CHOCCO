@@ -981,22 +981,29 @@
                                                               justify-content: space-between;
                                                           }
                                                           
-                                                          .icon-footer {
+                                                          //   .icon-footer {
+                                                          //       &__vk {
+                                                          //             width: 23px;
+                                                          //             height: 13px;
+                                                          //       }
+                                                          //       &__fb {
+                                                          //           width: 20px;
+                                                          //           height: 20px;
+                                                          //       }
+                                                          //       &__inst {
+                                                          //           width: 20px;
+                                                          //           height: 20px;
+                                                          //       }
+                                                          //       &__tw {
+                                                          //           width: 20px;
+                                                          //           height: 16px;
+                                                          //       }
+                                                          //       hover для svg???
+                                                          //   }
+                                                          .icon {
                                                               &__vk {
+                                                                  fill: #B3B3B3;
                                                                   width: 23px;
                                                                   height: 13px;
                                                               }
-                                                              &__fb {
-                                                                  //   width: 20px;
-                                                                  //   height: 20px;                                                                  
-                                                              }
-                                                              &__inst {
-                                                                  width: 20px;
-                                                                  height: 20px;
-                                                              }
-                                                              &__tw {
-                                                                  width: 20px;
-                                                                  height: 16px;
-                                                              }
-                                                              // hover для svg???
                                                           }
