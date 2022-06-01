@@ -1,0 +1,10 @@
+@each $social in (vk, fb, inst, tw) {
+    .icon_#{$social} {
+        fill: #B3B3B3;
+        width: 20px;
+        &:hover {
+            fill: #000;
+            transition: 1s;
+        }
+    }
+}

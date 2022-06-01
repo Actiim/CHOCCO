@@ -973,37 +973,11 @@
                                                           }
                                                           
                                                           .info__social-media {
-                                                              width: 142px;
+                                                              max-width: 142px;
+                                                              width: 100%;
                                                           }
                                                           
                                                           .social-media__icon-footer {
                                                               display: flex;
                                                               justify-content: space-between;
-                                                          }
-                                                          
-                                                          //   .icon-footer {
-                                                          //       &__vk {
-                                                          //             width: 23px;
-                                                          //             height: 13px;
-                                                          //       }
-                                                          //       &__fb {
-                                                          //           width: 20px;
-                                                          //           height: 20px;
-                                                          //       }
-                                                          //       &__inst {
-                                                          //           width: 20px;
-                                                          //           height: 20px;
-                                                          //       }
-                                                          //       &__tw {
-                                                          //           width: 20px;
-                                                          //           height: 16px;
-                                                          //       }
-                                                          //       hover для svg???
-                                                          //   }
-                                                          .icon {
-                                                              &__vk {
-                                                                  fill: #B3B3B3;
-                                                                  width: 23px;
-                                                                  height: 13px;
-                                                              }
                                                           }
