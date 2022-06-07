@@ -1415,7 +1415,7 @@
 .bg__map {
   position: relative;
   width: 100vw;
-  height: 100vh;
+  height: calc(100vh - 93px);
   background-image: url(/img/карта.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -1423,8 +1423,6 @@
 }
 
 .map__footer-bg {
-  position: absolute;
-  bottom: 0px;
   background-color: #fff;
   width: 100%;
   height: 93px;
